@@ -1,33 +1,4 @@
 .price-card {
-    &__blok {
-        display: flex;
-        flex-direction: column;
-        width: 380px;
-        height: 770px;
-        background-color: #334247;
-        margin-right: 18px;
-    }
-
-    &__title {
-        padding: 33px 108px;
-        letter-spacing: 0px;
-    }
-
-    &__title h2 {
-        font-size: 35px;
-        font-weight: 700;
-        line-height: 43px;
-        margin: 0;
-    }
-
-    &__title p {
-        font-family: "Roboto", sans-serif;
-        font-size: 20px;
-        font-weight: 300;
-        line-height: 24.06px;
-        margin: 0;
-    }
-
     .orange-price {
         font-size: 55px;
         font-weight: 700;
@@ -37,37 +8,11 @@
         background-color: $orange-price;
     }
 
-    &__description {
-        padding: 40px 26px;
-        font-size: 15px;
-        font-weight: 300;
-        line-height: 18px;
-        letter-spacing: 0px;
-    }
-
-    &__options-list {
-        max-width: 380px;
-        text-align: left;
-    }
-
     .webshop-list li {
         &::before {
             content: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_orange.png');
             margin-right: 22px;
             margin-left: 22px;
-        }
-    }
-
-    &__list li {
-        padding: 16px 0;
-        font-size: 15px;
-        font-weight: 300;
-        line-height: 18px;
-        letter-spacing: 0px;
-        text-align: left;
-
-        &:nth-child(odd) {
-            background-color: #2a3438;
         }
     }
 
