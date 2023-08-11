@@ -1,26 +1,25 @@
-.business {
-    &__blok-price {
+.price-card {
+    &__blok {
         display: flex;
         flex-direction: column;
         width: 380px;
         height: 770px;
         background-color: #334247;
-        margin: 0 20px;
     }
 
-    &__header {
+    &__title {
         padding: 33px 108px;
         letter-spacing: 0px;
     }
 
-    &__header h2 {
+    &__title h2 {
         font-size: 35px;
         font-weight: 700;
         line-height: 43px;
         margin: 0;
     }
 
-    &__header p {
+    &__title p {
         font-family: "Roboto", sans-serif;
         font-size: 20px;
         font-weight: 300;
@@ -37,7 +36,7 @@
         background-color: $blue-price;
     }
 
-    &__desc {
+    &__description {
         padding: 40px 26px;
         font-size: 15px;
         font-weight: 300;
@@ -45,13 +44,20 @@
         letter-spacing: 0px;
     }
 
-    &__list {
+    &__options-list {
         max-width: 380px;
         text-align: left;
-        // padding-left: 22px;
     }
 
-    &__list li {
+    .business-list li {
+        &::before {
+            content: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_blue.png');
+            margin-right: 22px;
+            margin-left: 22px;
+        }
+    }
+
+    &__options-list li {
         padding: 16px 0;
         font-size: 15px;
         font-weight: 300;
@@ -59,18 +65,12 @@
         letter-spacing: 0px;
         text-align: left;
 
-        &::before {
-            content: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_blue.png');
-            margin-right: 22px;
-            margin-left: 22px;
-        }
-
         &:nth-child(odd) {
             background-color: #2a3438;
         }
     }
 
-    .button {
+    .button-business {
         cursor: pointer;
         border-radius: 20px;
         background: #3A6BA5;

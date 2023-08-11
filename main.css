@@ -29,43 +29,42 @@ li {
   list-style: none;
 }
 
-.page {
+.price {
   display: flex;
   justify-content: center;
 }
-.page__blok-price {
+.price-card {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.item__blok-price {
+.price-card__blok {
   display: flex;
   flex-direction: column;
   width: 380px;
   height: 770px;
   background-color: #334247;
-  margin: 0 20px;
 }
-.item__header {
+.price-card__title {
   padding: 33px 140px;
   letter-spacing: 0px;
 }
-.item__header h2 {
+.price-card__title h2 {
   font-size: 35px;
   font-weight: 700;
   line-height: 43px;
   margin: 0;
 }
-.item__header p {
+.price-card__title p {
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-weight: 300;
   line-height: 24.06px;
   margin: 0;
 }
-.item .green-price {
+.price-card .green-price {
   font-size: 55px;
   font-weight: 700;
   line-height: 67px;
@@ -73,18 +72,18 @@ li {
   padding: 19px 110px;
   background-color: #5BB189;
 }
-.item__desc {
+.price-card__description {
   padding: 40px 26px;
   font-size: 15px;
   font-weight: 300;
   line-height: 18px;
   letter-spacing: 0px;
 }
-.item__list {
+.price-card__options-list {
   max-width: 380px;
   text-align: left;
 }
-.item__list li {
+.price-card__options-list li {
   padding: 16px 0;
   font-size: 15px;
   font-weight: 300;
@@ -92,15 +91,15 @@ li {
   letter-spacing: 0px;
   text-align: left;
 }
-.item__list li::before {
+.price-card__options-list li::before {
   content: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_green.png");
   margin-right: 22px;
   margin-left: 22px;
 }
-.item__list li:nth-child(odd) {
+.price-card__options-list li:nth-child(odd) {
   background-color: #2a3438;
 }
-.item .button {
+.price-card .button-basic {
   cursor: pointer;
   border-radius: 20px;
   background: #5BB189;
@@ -108,7 +107,7 @@ li {
   margin: 39px auto;
   padding: 11px 26px 12px 28px;
 }
-.item .button__link {
+.price-card .button-basic__link {
   color: #FFF;
   text-align: center;
   font-family: Montserrat;
@@ -118,32 +117,31 @@ li {
   line-height: normal;
 }
 
-.business__blok-price {
+.price-card__blok {
   display: flex;
   flex-direction: column;
   width: 380px;
   height: 770px;
   background-color: #334247;
-  margin: 0 20px;
 }
-.business__header {
+.price-card__title {
   padding: 33px 108px;
   letter-spacing: 0px;
 }
-.business__header h2 {
+.price-card__title h2 {
   font-size: 35px;
   font-weight: 700;
   line-height: 43px;
   margin: 0;
 }
-.business__header p {
+.price-card__title p {
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-weight: 300;
   line-height: 24.06px;
   margin: 0;
 }
-.business .blue-price {
+.price-card .blue-price {
   font-size: 55px;
   font-weight: 700;
   line-height: 67px;
@@ -151,18 +149,23 @@ li {
   padding: 19px 110px;
   background-color: #3A6BA5;
 }
-.business__desc {
+.price-card__description {
   padding: 40px 26px;
   font-size: 15px;
   font-weight: 300;
   line-height: 18px;
   letter-spacing: 0px;
 }
-.business__list {
+.price-card__options-list {
   max-width: 380px;
   text-align: left;
 }
-.business__list li {
+.price-card .business-list li::before {
+  content: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_blue.png");
+  margin-right: 22px;
+  margin-left: 22px;
+}
+.price-card__options-list li {
   padding: 16px 0;
   font-size: 15px;
   font-weight: 300;
@@ -170,15 +173,10 @@ li {
   letter-spacing: 0px;
   text-align: left;
 }
-.business__list li::before {
-  content: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_blue.png");
-  margin-right: 22px;
-  margin-left: 22px;
-}
-.business__list li:nth-child(odd) {
+.price-card__options-list li:nth-child(odd) {
   background-color: #2a3438;
 }
-.business .button {
+.price-card .button-business {
   cursor: pointer;
   border-radius: 20px;
   background: #3A6BA5;
@@ -186,7 +184,7 @@ li {
   margin: 39px auto;
   padding: 11px 26px 12px 28px;
 }
-.business .button__link {
+.price-card .button-business__link {
   color: #FFF;
   text-align: center;
   font-family: Montserrat;
@@ -196,32 +194,32 @@ li {
   line-height: normal;
 }
 
-.webshop__blok-price {
+.price-card__blok {
   display: flex;
   flex-direction: column;
   width: 380px;
   height: 770px;
   background-color: #334247;
-  margin: 0 20px;
+  margin-right: 18px;
 }
-.webshop__header {
+.price-card__title {
   padding: 33px 108px;
   letter-spacing: 0px;
 }
-.webshop__header h2 {
+.price-card__title h2 {
   font-size: 35px;
   font-weight: 700;
   line-height: 43px;
   margin: 0;
 }
-.webshop__header p {
+.price-card__title p {
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-weight: 300;
   line-height: 24.06px;
   margin: 0;
 }
-.webshop .orange-price {
+.price-card .orange-price {
   font-size: 55px;
   font-weight: 700;
   line-height: 67px;
@@ -229,18 +227,23 @@ li {
   padding: 19px 110px;
   background-color: #EC632A;
 }
-.webshop__desc {
+.price-card__description {
   padding: 40px 26px;
   font-size: 15px;
   font-weight: 300;
   line-height: 18px;
   letter-spacing: 0px;
 }
-.webshop__list {
+.price-card__options-list {
   max-width: 380px;
   text-align: left;
 }
-.webshop__list li {
+.price-card .webshop-list li::before {
+  content: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_orange.png");
+  margin-right: 22px;
+  margin-left: 22px;
+}
+.price-card__list li {
   padding: 16px 0;
   font-size: 15px;
   font-weight: 300;
@@ -248,15 +251,10 @@ li {
   letter-spacing: 0px;
   text-align: left;
 }
-.webshop__list li::before {
-  content: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_orange.png");
-  margin-right: 22px;
-  margin-left: 22px;
-}
-.webshop__list li:nth-child(odd) {
+.price-card__list li:nth-child(odd) {
   background-color: #2a3438;
 }
-.webshop .button {
+.price-card .button-webshop {
   cursor: pointer;
   border-radius: 20px;
   background: #EC632A;
@@ -264,7 +262,7 @@ li {
   margin: 39px auto;
   padding: 11px 26px 12px 28px;
 }
-.webshop .button__link {
+.price-card .button-webshop__link {
   color: #FFF;
   text-align: center;
   font-family: Montserrat;

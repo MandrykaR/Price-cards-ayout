@@ -1,10 +1,11 @@
-.page {
+.price {
     display: flex;
     justify-content: center;
-    &__blok-price {
+    &-card {
         height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
     }
 }
+
