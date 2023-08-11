@@ -1,25 +1,20 @@
-.page {
+.price {
     display: flex;
+    height: 100vh;
+    align-items: center;
     justify-content: center;
 }
 
 .price-card {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+    width: 380px;
+    height: 770px;
+    background-color: #334247;
     margin-right: 18px;
+
 
     &:last-child {
         margin-right: 0;
-    }
-
-    &__blok {
-        display: flex;
-        flex-direction: column;
-        width: 380px;
-        height: 770px;
-        background-color: #334247;
     }
 
     &__title {
