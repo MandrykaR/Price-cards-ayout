@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #141b1c;
+  box-sizing: border-box;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+input {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.page__blok-price {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item__blok-price {
+  display: flex;
+  flex-direction: column;
+  width: 380px;
+  height: 770px;
+  background-color: #334247;
+  margin: 0 20px;
+}
+.item__header {
+  padding: 33px 140px;
+  letter-spacing: 0px;
+}
+.item__header h2 {
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 43px;
+  margin: 0;
+}
+.item__header p {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 24.06px;
+  margin: 0;
+}
+.item__price {
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 67px;
+  letter-spacing: 0px;
+  padding: 19px 110px;
+  background-color: #5bb189;
+}
+.item__desc {
+  padding: 40px 26px;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 18px;
+  letter-spacing: 0px;
+}
+.item__list {
+  max-width: 380px;
+  text-align: left;
+}
+.item__list li {
+  padding: 16px 0;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 18px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.item__list li::before {
+  content: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_green.png");
+  margin-right: 22px;
+}
+.item__list li:nth-child(odd) {
+  background-color: #2a3438;
+}
+.item__gr {
+  background-color: #fff;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,3 +1,8 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
 body {
   background-color: #141b1c;
   box-sizing: border-box;
@@ -6,18 +11,36 @@ body {
   text-align: center;
 }
 
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+input, ul {
+  margin: 0;
+  padding: 0;
+}
+
 li {
   list-style: none;
 }
 
-.page-blok-price {
+.page {
+  display: flex;
+  justify-content: center;
+}
+.page__blok-price {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.item-blok-price {
+.item__blok-price {
   display: flex;
   flex-direction: column;
   width: 380px;
@@ -25,50 +48,43 @@ li {
   background-color: #334247;
   margin: 0 20px;
 }
-
-.header-item {
+.item__header {
   padding: 33px 140px;
   letter-spacing: 0px;
 }
-
-.header-item h2 {
+.item__header h2 {
   font-size: 35px;
   font-weight: 700;
   line-height: 43px;
   margin: 0;
 }
-
-.header-item p {
+.item__header p {
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-weight: 300;
   line-height: 24.06px;
   margin: 0;
 }
-
-.price-item {
+.item .green-price {
   font-size: 55px;
   font-weight: 700;
   line-height: 67px;
   letter-spacing: 0px;
-  padding: 16px 105px;
-  background-color: #5bb189;
+  padding: 19px 110px;
+  background-color: #5BB189;
 }
-
-.desc {
+.item__desc {
   padding: 40px 26px;
   font-size: 15px;
   font-weight: 300;
   line-height: 18px;
   letter-spacing: 0px;
 }
-
-.list-item {
+.item__list {
+  max-width: 380px;
   text-align: left;
-  padding-left: 22px;
 }
-
-.list-item li {
+.item__list li {
   padding: 16px 0;
   font-size: 15px;
   font-weight: 300;
@@ -76,12 +92,186 @@ li {
   letter-spacing: 0px;
   text-align: left;
 }
-
-.list-item li::before {
-  content: url(./Shape.jpg);
+.item__list li::before {
+  content: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_green.png");
   margin-right: 22px;
+  margin-left: 22px;
 }
-
-.list-item li:nth-child(2) {
+.item__list li:nth-child(odd) {
   background-color: #2a3438;
 }
+.item .button {
+  cursor: pointer;
+  border-radius: 20px;
+  background: #5BB189;
+  max-width: 150px;
+  margin: 39px auto;
+  padding: 11px 26px 12px 28px;
+}
+.item .button__link {
+  color: #FFF;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.business__blok-price {
+  display: flex;
+  flex-direction: column;
+  width: 380px;
+  height: 770px;
+  background-color: #334247;
+  margin: 0 20px;
+}
+.business__header {
+  padding: 33px 108px;
+  letter-spacing: 0px;
+}
+.business__header h2 {
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 43px;
+  margin: 0;
+}
+.business__header p {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 24.06px;
+  margin: 0;
+}
+.business .blue-price {
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 67px;
+  letter-spacing: 0px;
+  padding: 19px 110px;
+  background-color: #3A6BA5;
+}
+.business__desc {
+  padding: 40px 26px;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 18px;
+  letter-spacing: 0px;
+}
+.business__list {
+  max-width: 380px;
+  text-align: left;
+}
+.business__list li {
+  padding: 16px 0;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 18px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.business__list li::before {
+  content: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_blue.png");
+  margin-right: 22px;
+  margin-left: 22px;
+}
+.business__list li:nth-child(odd) {
+  background-color: #2a3438;
+}
+.business .button {
+  cursor: pointer;
+  border-radius: 20px;
+  background: #3A6BA5;
+  max-width: 150px;
+  margin: 39px auto;
+  padding: 11px 26px 12px 28px;
+}
+.business .button__link {
+  color: #FFF;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.webshop__blok-price {
+  display: flex;
+  flex-direction: column;
+  width: 380px;
+  height: 770px;
+  background-color: #334247;
+  margin: 0 20px;
+}
+.webshop__header {
+  padding: 33px 108px;
+  letter-spacing: 0px;
+}
+.webshop__header h2 {
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 43px;
+  margin: 0;
+}
+.webshop__header p {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 24.06px;
+  margin: 0;
+}
+.webshop .orange-price {
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 67px;
+  letter-spacing: 0px;
+  padding: 19px 110px;
+  background-color: #EC632A;
+}
+.webshop__desc {
+  padding: 40px 26px;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 18px;
+  letter-spacing: 0px;
+}
+.webshop__list {
+  max-width: 380px;
+  text-align: left;
+}
+.webshop__list li {
+  padding: 16px 0;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 18px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.webshop__list li::before {
+  content: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_orange.png");
+  margin-right: 22px;
+  margin-left: 22px;
+}
+.webshop__list li:nth-child(odd) {
+  background-color: #2a3438;
+}
+.webshop .button {
+  cursor: pointer;
+  border-radius: 20px;
+  background: #EC632A;
+  max-width: 150px;
+  margin: 39px auto;
+  padding: 11px 26px 12px 28px;
+}
+.webshop .button__link {
+  color: #FFF;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/*# sourceMappingURL=main.css.map */
