@@ -1,16 +1,13 @@
-.price {
+.page {
     display: flex;
     justify-content: center;
-
-    &-card {
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
 }
 
 .price-card {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-right: 18px;
 
     &:last-child {

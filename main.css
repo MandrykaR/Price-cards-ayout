@@ -29,18 +29,16 @@ li {
   list-style: none;
 }
 
-.price {
+.page {
   display: flex;
   justify-content: center;
 }
+
 .price-card {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.price-card {
   margin-right: 18px;
 }
 .price-card:last-child {
