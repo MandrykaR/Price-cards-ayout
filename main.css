@@ -38,7 +38,6 @@ li {
   height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
   margin-right: 18px;
 }
 .price-card:last-child {
