@@ -7,8 +7,12 @@ body {
   background-color: #141b1c;
   box-sizing: border-box;
   color: #ffffff;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
+}
+
+a {
+  text-decoration: none;
 }
 
 h1,
@@ -16,7 +20,8 @@ h2,
 h3,
 h4,
 p,
-input {
+input,
+ul {
   margin: 0;
   padding: 0;
 }
@@ -25,58 +30,51 @@ li {
   list-style: none;
 }
 
-.page__blok-price {
-  height: 100vh;
+.price {
   display: flex;
-  justify-content: center;
+  height: 100vh;
   align-items: center;
+  justify-content: center;
 }
 
-.item__blok-price {
-  display: flex;
-  flex-direction: column;
+.price-card {
   width: 380px;
   height: 770px;
   background-color: #334247;
-  margin: 0 20px;
+  margin-right: 18px;
 }
-.item__header {
-  padding: 33px 140px;
+.price-card:last-child {
+  margin-right: 0;
+}
+.price-card__title {
+  padding: 33px 102px;
   letter-spacing: 0px;
 }
-.item__header h2 {
+.price-card__title h2 {
   font-size: 35px;
   font-weight: 700;
   line-height: 43px;
   margin: 0;
 }
-.item__header p {
-  font-family: "Roboto", sans-serif;
+.price-card__title p {
+  font-family: 'Roboto', sans-serif;
   font-size: 20px;
   font-weight: 300;
   line-height: 24.06px;
   margin: 0;
 }
-.item__price {
-  font-size: 55px;
-  font-weight: 700;
-  line-height: 67px;
-  letter-spacing: 0px;
-  padding: 19px 110px;
-  background-color: #5bb189;
-}
-.item__desc {
+.price-card__description {
   padding: 40px 26px;
   font-size: 15px;
   font-weight: 300;
   line-height: 18px;
   letter-spacing: 0px;
 }
-.item__list {
+.price-card__options-list {
   max-width: 380px;
   text-align: left;
 }
-.item__list li {
+.price-card__options-list li {
   padding: 16px 0;
   font-size: 15px;
   font-weight: 300;
@@ -84,15 +82,101 @@ li {
   letter-spacing: 0px;
   text-align: left;
 }
-.item__list li::before {
-  content: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_green.png");
-  margin-right: 22px;
-}
-.item__list li:nth-child(odd) {
+.price-card__options-list li:nth-child(odd) {
   background-color: #2a3438;
 }
-.item__gr {
-  background-color: #fff;
+
+.price-card .green-price {
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 67px;
+  letter-spacing: 0px;
+  padding: 19px 110px;
+  background-color: #5bb189;
+}
+.price-card .basic-list li::before {
+  content: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_green.png');
+  margin-right: 22px;
+  margin-left: 22px;
+}
+.price-card .button-basic {
+  cursor: pointer;
+  border-radius: 20px;
+  background: #5bb189;
+  max-width: 150px;
+  margin: 39px auto;
+  padding: 11px 26px 12px 28px;
+}
+.price-card .button-basic__link {
+  color: #fff;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.price-card .blue-price {
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 67px;
+  letter-spacing: 0px;
+  padding: 19px 110px;
+  background-color: #3a6ba5;
+}
+.price-card .business-list li::before {
+  content: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_blue.png');
+  margin-right: 22px;
+  margin-left: 22px;
+}
+.price-card .button-business {
+  cursor: pointer;
+  border-radius: 20px;
+  background: #3a6ba5;
+  max-width: 150px;
+  margin: 39px auto;
+  padding: 11px 26px 12px 28px;
+}
+.price-card .button-business__link {
+  color: #fff;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.price-card .orange-price {
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 67px;
+  letter-spacing: 0px;
+  padding: 19px 110px;
+  background-color: #ec632a;
+}
+.price-card .webshop-list li::before {
+  content: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_orange.png');
+  margin-right: 22px;
+  margin-left: 22px;
+}
+.price-card .button-webshop {
+  cursor: pointer;
+  border-radius: 20px;
+  background: #ec632a;
+  max-width: 150px;
+  margin: 39px auto;
+  padding: 11px 26px 12px 28px;
+}
+.price-card .button-webshop__link {
+  color: #fff;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 /*# sourceMappingURL=style.css.map */
