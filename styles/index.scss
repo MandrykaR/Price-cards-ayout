@@ -1,2 +1,47 @@
 @import 'page.scss';
 @import 'cards.scss';
+
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	background-color: #141b1c;
+	box-sizing: border-box;
+	color: #ffffff;
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+input,
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style: none;
+}
+
+button {
+	background: none;
+	border: none;
+	margin: 0;
+	padding: 0;
+	font: inherit;
+	color: inherit;
+	cursor: pointer;
+	text-align: inherit;
+	text-decoration: none;
+	display: inline-block;
+}
