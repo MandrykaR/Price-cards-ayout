@@ -1,118 +1,86 @@
 .price-card {
+    &__price {
+        font-size: 55px;
+        font-weight: 700;
+        line-height: 67px;
+        letter-spacing: 0px;
+        padding: 19px 110px;
+    }
+    
+    &__options-list-item {
+        &::before {
+            margin-right: 22px;
+            margin-left: 22px;
+        }
+    }
+    
+    &__order-btn {
+        cursor: pointer;
+        border-radius: 20px;
+        max-width: 150px;
+        margin: 39px auto;
+        padding: 11px 26px 12px 28px;
+        text-align: center;
+    }
 
-  .green-price {
-    font-size: 55px;
-    font-weight: 700;
-    line-height: 67px;
-    letter-spacing: 0px;
-    padding: 19px 110px;
+    &__order-btn-link {
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-decoration: none;
+    }
+}
+
+/* Зеленая тема */
+.price-card__price--green {
     background-color: #5BB189;
-  }
-
-  .basic-list li {
-    &::before {
-      content: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_green.png');
-      margin-right: 22px;
-      margin-left: 22px;
-    }
-  }
-
-  .button-basic {
-    cursor: pointer;
-    border-radius: 20px;
-    background: #5BB189;
-    max-width: 150px;
-    margin: 39px auto;
-    padding: 11px 26px 12px 28px;
-
-    &__link {
-      color: #FFF;
-      text-align: center;
-      font-family: Montserrat;
-      font-size: 14px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: normal;
-    }
-  }
-
 }
 
-.price-card {
-  .blue-price {
-    font-size: 55px;
-    font-weight: 700;
-    line-height: 67px;
-    letter-spacing: 0px;
-    padding: 19px 110px;
+.price-card__options-list-item--green::before {
+    content: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_green.png');
+}
+
+.price-card__order-btn--green {
+    background-color: #5BB189;
+}
+
+.price-card__order-btn-link--green {
+    color: #FFF;
+}
+
+/* Синяя тема */
+.price-card__price--blue {
     background-color: #3A6BA5;
-  }
-
-
-  .business-list li {
-    &::before {
-      content: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_blue.png');
-      margin-right: 22px;
-      margin-left: 22px;
-    }
-  }
-
-  .button-business {
-    cursor: pointer;
-    border-radius: 20px;
-    background: #3A6BA5;
-    max-width: 150px;
-    margin: 39px auto;
-    padding: 11px 26px 12px 28px;
-
-    &__link {
-      color: #FFF;
-      text-align: center;
-      font-family: Montserrat;
-      font-size: 14px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: normal;
-    }
-  }
-
 }
 
-.price-card {
-  .orange-price {
-    font-size: 55px;
-    font-weight: 700;
-    line-height: 67px;
-    letter-spacing: 0px;
-    padding: 19px 110px;
+.price-card__options-list-item--blue::before {
+    content: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_blue.png');
+}
+
+.price-card__order-btn--blue {
+    background-color: #3A6BA5;
+}
+
+.price-card__order-btn-link--blue {
+    color: #FFF;
+}
+
+/* Оранжевая тема */
+.price-card__price--orange {
     background-color: #EC632A;
-  }
+}
 
-  .webshop-list li {
-    &::before {
-      content: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_orange.png');
-      margin-right: 22px;
-      margin-left: 22px;
-    }
-  }
+.price-card__options-list-item--orange::before {
+    content: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_orange.png');
+}
 
-  .button-webshop {
-    cursor: pointer;
-    border-radius: 20px;
-    background: #EC632A;
-    max-width: 150px;
-    margin: 39px auto;
-    padding: 11px 26px 12px 28px;
+.price-card__order-btn--orange {
+    background-color: #EC632A;
+}
 
-    &__link {
-      color: #FFF;
-      text-align: center;
-      font-family: Montserrat;
-      font-size: 14px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: normal;
-    }
-  }
-
+.price-card__order-btn-link--orange {
+    color: #FFF;
 }
