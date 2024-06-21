@@ -1,9 +1,4 @@
-@import 'page.scss';
 @import 'cards.scss';
-
-* {
-	box-sizing: border-box;
-}
 
 * {
 	box-sizing: border-box;
@@ -33,10 +28,6 @@ ul {
 	padding: 0;
 }
 
-li {
-	list-style: none;
-}
-
 button {
 	background: none;
 	border: none;
@@ -48,4 +39,11 @@ button {
 	text-align: inherit;
 	text-decoration: none;
 	display: inline-block;
+}
+
+.page {
+	display: flex;
+	height: 100vh;
+	align-items: center;
+	justify-content: center;
 }
